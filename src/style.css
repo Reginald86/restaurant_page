@@ -1,19 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Caveat:wght@400..700&display=swap');
+
+.caveat {
+    font-family: 'Caveat', cursive; /* Use cursive as a fallback */
+}
+
+.akayaKanadaka {
+    font-family: 'Akaya Kanadaka', sans-serif; /* Use sans-serif as a fallback */
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Akaya Kanadaka"
 }
 
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif;
     background-color: gray;  
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    font-family: "Akaya Kanadaka"
 }
 
 header {
@@ -38,12 +49,13 @@ nav button{
     border-radius: 5px;
     cursor: pointer;
     margin: 0 45px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     transition: background-color 0.3s;
     font-weight: bold;
     text-decoration: underline yellow 2px;
     text-underline-offset: 9px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Akaya Kanadaka";
+    padding-bottom: 20px;
 }
 
 nav button:hover{
@@ -67,6 +79,25 @@ nav button:hover{
 
 #homeTitle{
     font-size: 3rem;
+    position: relative;
+}
+
+#homeTitle::before,
+#homeTitle::after {
+  content: "•";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  color: blue;
+}
+
+#homeTitle::before {
+  left: -27px;
+}
+
+#homeTitle::after {
+  right: -27px;
 }
 
 #homeSubTitle{
@@ -88,4 +119,9 @@ nav button:hover{
     width: 940px;
     font-size: 1.3rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+span{
+    color: blue;
+    font-size: 2rem;
 }
