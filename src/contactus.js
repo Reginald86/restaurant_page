@@ -4,7 +4,7 @@ export function contact() {
     content.textContent = "";
 
     const container = document.createElement('div');
-    container.id = "contactContainer";
+    container.id = "container";
 
     
    container.append();
