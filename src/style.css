@@ -134,8 +134,8 @@ nav button:hover{
 }
 
 #subContainer{
-    width: 900px;
-    height: 500px;
+    width: 920px;
+    height: 520px;
     background-color: black;
     margin-top: 13px;
     display: flex;
@@ -149,18 +149,19 @@ nav button:hover{
 
 .menuSection {
     height: 85%;
-    width: 380px;
+    width: 420px;
     background-color: white;
     border: 9px solid silver;
     box-shadow: 0 0 0 2px;
     display: flex;
     flex-flow: column;
-    padding: 13px 20px;
+    padding: 13px 15px;
 }
 
 .menuItems{
     padding: 20px 20px;
     line-height: 27px;
+    font-size: 1.2rem;
 }
 
 .menuTitle{
@@ -171,5 +172,101 @@ nav button:hover{
 
 #appetizer{
     text-decoration: underline yellow 5px;
+    text-underline-offset: 13px;
 }
+
+#dessert{
+    text-decoration: underline pink 5px;
+    text-underline-offset: 13px;
+}
+
+#beverage{
+    text-decoration: underline red 5px;
+    text-underline-offset: 13px;
+}
+
+#infoContainer{
+    display: flex;
+    gap: 27px;
+    font-size: 1.5rem;
+    border-bottom: 5px solid yellow;
+    padding-bottom: 13px;
+}
+
+#contactImage, #contactContainer{
+    height: 85%;
+    width: 350px;
+    border-radius: 9px;
+    margin: 13px 0;
+    box-shadow: 0 0 0 2px;
+}
+
+#contactContainer{
+    width: 490px;
+    background-color: white;
+    box-shadow: 0 0 0 2px;
+    display: flex;
+    flex-flow: column;
+    padding: 13px 15px; 
+    font-size: 2rem;  
+}
+
+#contactSubContainer{
+    width: 920px;
+    height: 520px;
+    background-color: blue;
+    margin-top: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    margin-bottom: 13px;   
+    border: 1px solid lightblue;
+    border-radius: 13px;
+} 
+
+
+#contactForm{
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+
+.inputSection{
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+}
+
+input{
+    height: 40px;
+    padding: 1px 5px;
+    font-size: 1.4rem;
+    font-family: Times New Roman;
+    border: 2px solid black;
+}
+
+#message{
+    border: 2px solid black;
+}
+
+#button{
+    font-size: 1.7rem;
+    width: fit-content;
+    height: auto;
+    padding: 5px 13px;
+    border: 3px solid black;
+    font-weight: 700;
+    border-radius: 13px;
+    box-shadow: 0 0 0 2px;
+    cursor: pointer;
+}
+
+#button:hover{
+    background-color: yellow;
+}
+
+
+
+
 

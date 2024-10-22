@@ -52,11 +52,40 @@ export function menu() {
             <li>Mini Meat Muffins - $16</li>
         `;
 
+        
+      const dessert = document.createElement('h2');
+      dessert.textContent = "Desserts:"
+      dessert.className = "menuTitle";
+      dessert.id = "dessert";
+      const dessertItems = document.createElement("ul");
+      dessertItems.className = "menuItems"
+      dessertItems.innerHTML = `
+            <li>Frozen Yogurt Bites - $11</li>
+            <li>Frozen Banana & Peanut Butter Pops - $13</li>
+            <li>Pumpkin & Peanut Butter FroYo Cups - $14</li>
+            <li>Doggie Donuts - $11 </li>
+            <li> Apple & Oatmeal Pupcakes - $9</li>
+        `;
+
+        const beverage = document.createElement('h2');
+        beverage.textContent = "Beverages:"
+        beverage.className = "menuTitle";
+        beverage.id = "beverage";
+        const beverageItems = document.createElement("ul");
+        beverageItems.className = "menuItems"
+        beverageItems.innerHTML = `
+              <li>Chicken Broth Cooler - $4.50</li>
+              <li>Pup-sicle Smoothie - $6.50</li>
+              <li>Toliet Bowl Water - Free</li>
+          `;
+      
+
 
 
 
    subContainer.append(menu1, menu2);
-   menu1.append(entree, entreeItems, appetizer, appetizerItems)
+   menu1.append(entree, entreeItems, appetizer, appetizerItems);
+   menu2.append(dessert, dessertItems, beverage, beverageItems);
    container.append(title, subTitle, subContainer);
    content.appendChild(container);
 
